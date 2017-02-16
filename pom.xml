@@ -11,15 +11,13 @@
 	
 	<groupId>org.eclipse.papyrus.bpmn</groupId>
 	<artifactId>org.eclipse.papyrus.bpmn.parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.8.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>BPMN</name>
 	<description>A Papyrus DSML for the BPMN OMG norm</description>
 	<url>https://eclipse.org/papyrus/components/${component.shortname}/</url>
-	<inceptionYear>2015</inceptionYear>
-
-	<modules>
-	</modules>
+	<inceptionYear>2015</inceptionYear>	
+	
 	<properties>
 		<component.shortname>bpmn</component.shortname>
 		<component.fullartifactId>org.eclipse.papyrus.bpmn</component.fullartifactId>
@@ -29,11 +27,25 @@
 		<component.rcp.name>org.eclipse.papyrus.bpmn.rcp</component.rcp.name>
 		<component.apibaseline.url>http://download.eclipse.org/modeling/mdt/papyrus/components/bpmn/0.8.0_papyrus-bpmn-mars_190/</component.apibaseline.url>
 		<component.servicetype>org.eclipse.papyrus.bpmn.service.types</component.servicetype>
-		<eclipse.targetrelease>neon</eclipse.targetrelease>
+		<eclipse.targetrelease>oxygen</eclipse.targetrelease>
 		<target.version>${project.version}</target.version>
 		<sonar.exclusions>**/src-gen/**</sonar.exclusions>
 	</properties>
 
+	<modules>
+		<module>org.eclipse.papyrus.bpmn</module>
+		<module>org.eclipse.papyrus.bpmn.diagram</module>
+		<module>org.eclipse.papyrus.bpmn.diagram.common</module>
+		<module>org.eclipse.papyrus.bpmn.diagram.process</module>
+		<module>org.eclipse.papyrus.bpmn.diagram.collaboration</module>
+		<module>org.eclipse.papyrus.bpmn.diagram.ui</module>
+		
+		<module>org.eclipse.papyrus.bpmn.tests</module>
+		
+		<module>org.eclipse.papyrus.bpmn.targetplatform.oxygen</module>
+		<module>releng</module>
+	</modules>	
+	
 	<ciManagement>
 		<system>Hudson</system>
 		<url>https://hudson.eclipse.org/papyrus/view/${component.hudson.tabname}/</url>
@@ -90,4 +102,6 @@
 		</repository>
 	</repositories>
 	
+	
+
 </project>
