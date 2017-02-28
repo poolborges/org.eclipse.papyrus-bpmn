@@ -3,10 +3,10 @@ Export-Package: org.eclipse.papyrus.bpmn,
  org.eclipse.papyrus.bpmn.BPMNProfile,
  org.eclipse.papyrus.bpmn.BPMNProfile.impl,
  org.eclipse.papyrus.bpmn.BPMNProfile.util
-Require-Bundle: org.eclipse.ui;bundle-version="3.107.0",
- org.eclipse.core.runtime;bundle-version="3.11.0",
+Require-Bundle: org.eclipse.ui;bundle-version="[3.107.0,4.0.0)",
+ org.eclipse.core.runtime;bundle-version="[3.11.0,4.0.0)",
  org.eclipse.uml2.uml;bundle-version="5.1.0";visibility:=reexport,
- org.eclipse.papyrus.infra.types.core;bundle-version="2.0.0",
+ org.eclipse.papyrus.infra.types.core;bundle-version="[3.0.0,4.0.0)",
  org.apache.log4j;bundle-version="1.2.15",
  org.eclipse.emf.ecore,
  org.eclipse.emf.common

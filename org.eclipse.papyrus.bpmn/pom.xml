@@ -8,4 +8,8 @@
 	</parent>
 	<artifactId>org.eclipse.papyrus.bpmn</artifactId>
 	<packaging>eclipse-plugin</packaging>
+
+	<build>
+		<sourceDirectory>custom-src</sourceDirectory>
+	</build>
 </project>
