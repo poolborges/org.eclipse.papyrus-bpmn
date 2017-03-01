@@ -116,7 +116,7 @@ public class CallActivityImpl extends BPMNActivityImpl implements CallActivity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	public CallableElement basicGetCalledElementRef() {
 		return CallActivityCustom.basicGetCalledElementRef(this);

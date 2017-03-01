@@ -41,6 +41,7 @@
 		<module>org.eclipse.papyrus.bpmn.diagram.ui</module>
 		
 		<module>org.eclipse.papyrus.bpmn.tests</module>
+		<module>org.eclipse.papyrus.bpmn.diagram.common.tests</module>
 		
 		<module>org.eclipse.papyrus.bpmn.targetplatform.oxygen</module>
 		<module>releng</module>
