@@ -11,7 +11,7 @@
 
 	<groupId>org.eclipse.papyrus.bpmn</groupId>
 	<artifactId>org.eclipse.papyrus.bpmn.parent</artifactId>
-	<version>0.8.0-SNAPSHOT</version>
+	<version>0.9.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>BPMN</name>
 	<description>A Papyrus DSML for the BPMN OMG norm</description>
