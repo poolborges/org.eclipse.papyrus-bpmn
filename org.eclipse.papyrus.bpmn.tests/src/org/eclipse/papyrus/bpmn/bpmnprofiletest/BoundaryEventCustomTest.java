@@ -8,12 +8,11 @@
  * http://www.eclipse.org/legal/epl-v10.html
  *
  *****************************************************************************/
-package org.eclipse.papyrus.bpmn.test;
+package org.eclipse.papyrus.bpmn.bpmnprofiletest;
 
 import static org.junit.Assert.assertEquals;
 
 import org.eclipse.papyrus.bpmn.BPMNProfile.BPMNActivity;
-import org.eclipse.papyrus.bpmn.BPMNProfile.BPMNProcess;
 import org.eclipse.papyrus.bpmn.BPMNProfile.BPMNProfilePackage;
 import org.eclipse.papyrus.bpmn.BPMNProfile.BoundaryEvent;
 import org.eclipse.papyrus.bpmn.BPMNProfile.Task;
@@ -35,36 +34,34 @@ public class BoundaryEventCustomTest {
 	private OpaqueAction action;
 	private BoundaryEvent boundaryEvent;
 
-	@Before	
-	public void setUp(){
+	@Before
+	public void setUp() {
 		Model model = BPMNResource.createBPMNModel();
-		
+
 		Activity activity = UMLFactory.eINSTANCE.createActivity();
 		model.getPackagedElements().add(activity);
 		StereotypeApplicationHelper.getInstance(null).applyStereotype(activity, BPMNProfilePackage.eINSTANCE.getBPMNProcess());
-		BPMNProcess bpmnProcess = UMLUtil.getStereotypeApplication(activity, BPMNProcess.class);
-		
+
 		action = UMLFactory.eINSTANCE.createOpaqueAction();
-		activity.getOwnedNodes().add(action);		
+		activity.getOwnedNodes().add(action);
 		Task task = (Task) StereotypeApplicationHelper.getInstance(null).applyStereotype(action, BPMNProfilePackage.eINSTANCE.getTask());
-		
+
 		ChangeEvent changeEvent = UMLFactory.eINSTANCE.createChangeEvent();
 		model.getPackagedElements().add(changeEvent);
 		boundaryEvent = (BoundaryEvent) StereotypeApplicationHelper.getInstance(null).applyStereotype(changeEvent, BPMNProfilePackage.eINSTANCE.getBoundaryEvent());
 		task.getBoundaryEventRefs().add(boundaryEvent);
 		boundaryEvent.setBase_ActivityNode(task.getBase_ActivityNode());
 	}
-	
+
 	@Test
 	public void basicGetAttachedToRefGeneratedTest() {
-		try{
+		try {
 			boundaryEvent.getAttachedToRef();
-		}
-		catch(UnsupportedOperationException e){
+		} catch (UnsupportedOperationException e) {
 			Assert.fail("missing custom code !");
 		}
 	}
-	
+
 	@Test
 	public void basicGetAttachedToRefCustomTest() {
 		BPMNActivity bmpnActivity = BoundaryEventCustom.basicGetAttachedToRef(boundaryEvent);
@@ -72,7 +69,7 @@ public class BoundaryEventCustomTest {
 		assertEquals(bmpnActivity, UMLUtil.getStereotypeApplication(action, BPMNActivity.class));
 	}
 
-	
+
 	@Test
 	public void basicGetAttachedToRefTest() {
 		BPMNActivity bmpnActivity = boundaryEvent.getAttachedToRef();

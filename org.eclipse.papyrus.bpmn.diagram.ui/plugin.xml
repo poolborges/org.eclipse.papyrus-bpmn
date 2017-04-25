@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-   <extension
+<!--   <extension
          point="org.eclipse.ui.newWizards">
       <wizard
             canFinishEarly="false"
@@ -27,12 +27,12 @@
             %wizard.description
          </description>
       </wizard>
-   </extension>
+   </extension>-->
    <extension
          name="%extension.name"
          point="org.eclipse.papyrus.infra.newchild">
       <menuCreationModel
-            model="model/BpmnNewChildMenu.xmi">
+            model="model/BpmnNewChildMenu.creationmenumodel">
       </menuCreationModel>
    </extension>
   <!-- 

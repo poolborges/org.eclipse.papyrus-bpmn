@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ASCII" standalone="no"?>
+<ElementCreationMenuModel:Folder xmlns:ElementCreationMenuModel="http://www.eclipse.org/papyrus/infra/newchild/elementcreationmenumodel" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" label="New BPMN Child" xmi:version="2.0">
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/SequenceFlow.png" label="SequenceFlow" role="" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.SequenceFlow_ControlFlow" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/DataAssociation.png" label="Data Association" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.DataAssociation_ObjectFlow" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/CallBehaviorAction.png" label="Macro Task" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.CallActivity_CallBehaviorAction" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/Task.png" label="Task" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.Task_OpaqueAction" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/ManualTask.png" label="Manual Task" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.ManualTask_OpaqueAction" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/UserTask.png" label="User Task" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.UserTask_OpaqueAction" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/ScriptTask.png" label="Script Task" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.ScriptTask_OpaqueAction" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/BusinessRuleTask.png" label="Business Rule Task" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.BusinessRuleTask_OpaqueAction" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/SendTask.png" label="Send Task" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.SendTask_CallOperationAction" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/ServiceTask.png" label="ServiceTask" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.ServiceTask_CallOperationAction" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/InclusiveGatewayFork.png" label="Inclusive Gateway (Fork Node)" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.InclusiveGateway_ForkNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/InclusiveGatewayJoin.png" label="Inclusive Gateway (Join Node)" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.InclusiveGateway_JoinNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/ExclusiveGatewayFork.png" label="Exclusive Gateway (Decision Node)" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.ExclusiveGateway_DecisionNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/ExclusiveGatewayJoin.png" label="Exclusive Gateway (Merge Node)" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.ExclusiveGateway_MergeNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/ParallelGatewayFork.png" label="ParallelGateway (Fork Node)" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.ParallelGateway_ForkNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/ParallelGatewayJoin.png" label="ParallelGateway (Join Node)" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.ParallelGateway_JoinNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/EventBasedGateway.png" label="Event Based Gateway" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.EventBasedGateway_ForkNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/StartEvent.png" label="Start Event" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.StartEvent_InitialNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/EndEvent.png" label="End Event" role="" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.EndEvent_FlowFinalNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/IntermediateThrowEvent.png" label="Intermediate Throw Event" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.IntermediateThrowEvent_SendObjectAction" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/BoundaryEvent.png" label="Boundary Event" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.BoundaryEvent_InitialNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/SubProcess.png" label="SubProcess" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.SubProcess_StructuredActivityNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/DataStoreReference.png" label="Data Store Reference" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.DataStoreReference_DataStoreNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/DataStore.png" label="Data Store" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.DataStore_Class" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/DataInput.png" label="Data Input" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.DataInput_InputPin" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/DataOutput.png" label="Data Output" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.DataOutput_OutputPin" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/DataInputActivity.png" label="Data Input Activity" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.DataInput_ActivityParameterNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/DataOutputActivity.png" label="Data Output Activity" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.DataOutput_ActivityParameterNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/DataObject.png" label="Data Object" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.DataObject_DataStoreNode" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+  <menu icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/Lane.png" label="Lane" xsi:type="ElementCreationMenuModel:CreationMenu">
+    <elementType href="platform:/plugin/org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations#org.eclipse.papyrus.bpmn.Lane_ActivityPartition" xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration"/>
+  </menu>
+</ElementCreationMenuModel:Folder>

@@ -74,14 +74,16 @@ public class PaletteTest {
 		Document doc = builder.parse(new FileInputStream(file));
 		doc.getDocumentElement().normalize();
 		
-		NodeList nodeList = doc.getElementsByTagName("elementDescriptors");
+		NodeList nodeList = doc.getElementsByTagName("elementType");
 		Set<String> set = new HashSet<>();
 		
 		for(int i = 0; i < nodeList.getLength() ; i++){
 			Node node = nodeList.item(i);
 			if(node.getNodeType() == Node.ELEMENT_NODE){
 				Element element = (Element)node;
-				set.add(element.getAttribute("elementTypeId"));
+				String href = element.getAttribute("href");
+				String id = href.substring(href.indexOf("#") + 1);
+				set.add(id);
 			}
 		}
 		

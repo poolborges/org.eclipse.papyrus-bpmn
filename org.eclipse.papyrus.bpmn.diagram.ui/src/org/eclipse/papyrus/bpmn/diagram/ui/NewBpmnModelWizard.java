@@ -48,10 +48,10 @@ public class NewBpmnModelWizard extends CreateModelWizard {
 		return "Bpmn Model";
 	}
 
-	@Override
-	protected String[] getDiagramCategoryIds() {
-		return new String[] { CreateBpmnModelCommand.COMMAND_ID };
-	}
+//	@Override
+//	protected String[] getDiagramCategoryIds() {
+//		return new String[] { CreateBpmnModelCommand.COMMAND_ID };
+//	}
 
 
 

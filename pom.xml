@@ -36,7 +36,7 @@
 
 	<modules>
 		<module>org.eclipse.papyrus.bpmn</module>
-		<module>org.eclipse.papyrus.bpmn.diagram</module>
+		<module>org.eclipse.papyrus.bpmn.architecture</module>
 		<module>org.eclipse.papyrus.bpmn.diagram.common</module>
 		<module>org.eclipse.papyrus.bpmn.diagram.process</module>
 		<module>org.eclipse.papyrus.bpmn.diagram.collaboration</module>

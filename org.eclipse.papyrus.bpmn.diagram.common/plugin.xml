@@ -107,14 +107,14 @@
    <extension
          point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
       <elementTypeSet
-            clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext"
+            clientContextID="org.eclipse.papyrus.bpmn.descriptionLanguage"
             path="model/bpmndi.elementtypesconfigurations">
       </elementTypeSet>
    </extension>
    <extension
          point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
       <elementTypeSet
-            clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext"
+            clientContextID="org.eclipse.papyrus.bpmn.descriptionLanguage"
             path="model/customBpmndi.elementtypesconfigurations">
       </elementTypeSet>
    </extension>

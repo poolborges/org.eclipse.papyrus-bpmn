@@ -10,16 +10,14 @@
  *   CEA - Initial API and implementation
  *
  *****************************************************************************/
-package org.eclipse.papyrus.bpmn.test;
+package org.eclipse.papyrus.bpmn.bpmnprofiletest;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.eclipse.papyrus.bpmn.BPMNProfile.BPMNExpression;
-import org.eclipse.papyrus.bpmn.BPMNProfile.BPMNProcess;
 import org.eclipse.papyrus.bpmn.BPMNProfile.BPMNProfilePackage;
 import org.eclipse.papyrus.bpmn.BPMNProfile.StandardLoopCharacteristics;
-import org.eclipse.papyrus.bpmn.BPMNProfile.Task;
 import org.eclipse.papyrus.bpmn.BPMNProfile.impl.StandardLoopCharacteristicsCustom;
 import org.eclipse.papyrus.bpmn.util.BPMNResource;
 import org.eclipse.uml2.uml.Activity;
@@ -40,80 +38,75 @@ import org.junit.Test;
  */
 public class StandardLoopCharacteristicsCustomTest {
 
-	private BPMNProcess bpmnProcess;
-	private Task task;
 	private StandardLoopCharacteristics loop;
 	private BPMNExpression bex;
 
 	@Before
-	public void setUp(){
+	public void setUp() {
 		Model model = BPMNResource.createBPMNModel();
 
 		Activity activity = UMLFactory.eINSTANCE.createActivity();
 		model.getPackagedElements().add(activity);
 		StereotypeApplicationHelper.getInstance(null).applyStereotype(activity, BPMNProfilePackage.eINSTANCE.getBPMNProcess());
-		bpmnProcess = UMLUtil.getStereotypeApplication(activity, BPMNProcess.class);
-		
+
 		LoopNode loopNode = UMLFactory.eINSTANCE.createLoopNode();
 		activity.getOwnedNodes().add(loopNode);
 		StereotypeApplicationHelper.getInstance(null).applyStereotype(loopNode, BPMNProfilePackage.eINSTANCE.getStandardLoopCharacteristics());
 		loop = UMLUtil.getStereotypeApplication(loopNode, StandardLoopCharacteristics.class);
-		
+
 		OpaqueAction action = UMLFactory.eINSTANCE.createOpaqueAction();
 		loopNode.getNodes().add(action);
-		task = (Task) StereotypeApplicationHelper.getInstance(null).applyStereotype(action, BPMNProfilePackage.eINSTANCE.getTask());
-		
+		StereotypeApplicationHelper.getInstance(null).applyStereotype(action, BPMNProfilePackage.eINSTANCE.getTask());
+
 		loopNode.setIsTestedFirst(true);
-		
+
 		ValueSpecificationAction valueSpecificationAction = UMLFactory.eINSTANCE.createValueSpecificationAction();
 		loopNode.getNodes().add(valueSpecificationAction);
 		loopNode.getTests().add(valueSpecificationAction);
 		bex = (BPMNExpression) StereotypeApplicationHelper.getInstance(null).applyStereotype(valueSpecificationAction, BPMNProfilePackage.eINSTANCE.getBPMNExpression());
-		
+
 		OutputPin outputPin = UMLFactory.eINSTANCE.createOutputPin();
-		
+
 		valueSpecificationAction.setResult(outputPin);
 	}
-	
+
 	@Test
 	public void isTestBeforeGeneratedTest() {
-		try{
+		try {
 			loop.isTestBefore();
-		}
-		catch(UnsupportedOperationException e){
+		} catch (UnsupportedOperationException e) {
 			Assert.fail("missing custom code !");
 		}
 	}
-	
+
 	@Test
 	public void isTestBeforeCustomTest() {
 		assertTrue(StandardLoopCharacteristicsCustom.isTestBefore(loop));
 	}
-	
+
 	@Test
 	public void isTestBeforeTest() {
 		assertTrue(loop.isTestBefore());
 
 	}
-	
+
 	@Test
 	public void basicGetLoopConditionGeneratedTest() {
-		try{
+		try {
 			loop.getLoopCondition();
-		}
-		catch(UnsupportedOperationException e){
+		} catch (UnsupportedOperationException e) {
 			Assert.fail("missing custom code !");
 		}
 	}
-	
+
 	@Test
 	public void basicGetLoopConditionCustomTest() {
 		assertEquals(bex, StandardLoopCharacteristicsCustom.basicGetLoopCondition(loop));
 	}
-	
+
 	@Test
 	public void basicGetLoopConditionTest() {
 		assertEquals(bex, loop.getLoopCondition());
 	}
-	
+
 }

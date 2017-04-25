@@ -45,10 +45,10 @@ public class NewBpmnProjectWizard extends NewPapyrusProjectWizard {
 	/**
 	 * {@inheritDoc}
 	 */
-	@Override
-	protected String[] getDiagramCategoryIds() {
-		return new String[] { CreateBpmnModelCommand.COMMAND_ID };
-	}
+//	@Override
+//	protected String[] getDiagramCategoryIds() {
+//		return new String[] { CreateBpmnModelCommand.COMMAND_ID };
+//	}
 
 
 }
