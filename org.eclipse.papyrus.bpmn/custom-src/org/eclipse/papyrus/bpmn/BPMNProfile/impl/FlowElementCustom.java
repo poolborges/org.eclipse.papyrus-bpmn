@@ -69,7 +69,7 @@ public class FlowElementCustom {
 			}
 		}
 		if (flowElementsContainer == null) {
-			log.error("no container for " + flowElement);
+			log.info("no container for " + flowElement);
 		}
 		return flowElementsContainer;
 	}
