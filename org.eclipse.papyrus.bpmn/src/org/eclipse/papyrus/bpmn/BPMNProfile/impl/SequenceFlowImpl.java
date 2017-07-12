@@ -209,13 +209,10 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	public FlowNode basicGetSourceRef() {
-		// TODO: implement this method to return the 'Source Ref' reference
-		// -> do not perform proxy resolution
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		return SequenceFlowCustom.basicGetSourceRef(this);
 	}
 
 	/**
@@ -242,13 +239,10 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	public FlowNode basicGetTargetRef() {
-		// TODO: implement this method to return the 'Target Ref' reference
-		// -> do not perform proxy resolution
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		return SequenceFlowCustom.basicGetTargetRef(this);
 	}
 
 	/**
@@ -275,12 +269,12 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 		if (false) {
 			if (diagnostics != null) {
 				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 BPMNProfileValidator.DIAGNOSTIC_SOURCE,
-						 BPMNProfileValidator.SEQUENCE_FLOW__SEQUENCE_FLOWCONDITION_EXPRESSION,
-						 EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SequenceFlowconditionExpression", EObjectValidator.getObjectLabel(this, context) }),
-						 new Object [] { this }));
+						(new BasicDiagnostic
+								(Diagnostic.ERROR,
+										BPMNProfileValidator.DIAGNOSTIC_SOURCE,
+										BPMNProfileValidator.SEQUENCE_FLOW__SEQUENCE_FLOWCONDITION_EXPRESSION,
+										EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SequenceFlowconditionExpression", EObjectValidator.getObjectLabel(this, context) }),
+										new Object [] { this }));
 			}
 			return false;
 		}
@@ -300,12 +294,12 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 		if (false) {
 			if (diagnostics != null) {
 				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 BPMNProfileValidator.DIAGNOSTIC_SOURCE,
-						 BPMNProfileValidator.SEQUENCE_FLOW__SEQUENCE_FLOWSOURCE_REF,
-						 EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SequenceFlowsourceRef", EObjectValidator.getObjectLabel(this, context) }),
-						 new Object [] { this }));
+						(new BasicDiagnostic
+								(Diagnostic.ERROR,
+										BPMNProfileValidator.DIAGNOSTIC_SOURCE,
+										BPMNProfileValidator.SEQUENCE_FLOW__SEQUENCE_FLOWSOURCE_REF,
+										EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SequenceFlowsourceRef", EObjectValidator.getObjectLabel(this, context) }),
+										new Object [] { this }));
 			}
 			return false;
 		}
@@ -325,12 +319,12 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 		if (false) {
 			if (diagnostics != null) {
 				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 BPMNProfileValidator.DIAGNOSTIC_SOURCE,
-						 BPMNProfileValidator.SEQUENCE_FLOW__SEQUENCE_FLOWTARGET_REF,
-						 EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SequenceFlowtargetRef", EObjectValidator.getObjectLabel(this, context) }),
-						 new Object [] { this }));
+						(new BasicDiagnostic
+								(Diagnostic.ERROR,
+										BPMNProfileValidator.DIAGNOSTIC_SOURCE,
+										BPMNProfileValidator.SEQUENCE_FLOW__SEQUENCE_FLOWTARGET_REF,
+										EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SequenceFlowtargetRef", EObjectValidator.getObjectLabel(this, context) }),
+										new Object [] { this }));
 			}
 			return false;
 		}
@@ -345,20 +339,20 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case BPMNProfilePackage.SEQUENCE_FLOW__BASE_CONTROL_FLOW:
-				if (resolve) return getBase_ControlFlow();
-				return basicGetBase_ControlFlow();
-			case BPMNProfilePackage.SEQUENCE_FLOW__IS_IMMEDIATE:
-				return isImmediate();
-			case BPMNProfilePackage.SEQUENCE_FLOW__CONDITION_EXPRESSION:
-				if (resolve) return getConditionExpression();
-				return basicGetConditionExpression();
-			case BPMNProfilePackage.SEQUENCE_FLOW__SOURCE_REF:
-				if (resolve) return getSourceRef();
-				return basicGetSourceRef();
-			case BPMNProfilePackage.SEQUENCE_FLOW__TARGET_REF:
-				if (resolve) return getTargetRef();
-				return basicGetTargetRef();
+		case BPMNProfilePackage.SEQUENCE_FLOW__BASE_CONTROL_FLOW:
+			if (resolve) return getBase_ControlFlow();
+			return basicGetBase_ControlFlow();
+		case BPMNProfilePackage.SEQUENCE_FLOW__IS_IMMEDIATE:
+			return isImmediate();
+		case BPMNProfilePackage.SEQUENCE_FLOW__CONDITION_EXPRESSION:
+			if (resolve) return getConditionExpression();
+			return basicGetConditionExpression();
+		case BPMNProfilePackage.SEQUENCE_FLOW__SOURCE_REF:
+			if (resolve) return getSourceRef();
+			return basicGetSourceRef();
+		case BPMNProfilePackage.SEQUENCE_FLOW__TARGET_REF:
+			if (resolve) return getTargetRef();
+			return basicGetTargetRef();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -371,21 +365,21 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case BPMNProfilePackage.SEQUENCE_FLOW__BASE_CONTROL_FLOW:
-				setBase_ControlFlow((ControlFlow)newValue);
-				return;
-			case BPMNProfilePackage.SEQUENCE_FLOW__IS_IMMEDIATE:
-				setIsImmediate((Boolean)newValue);
-				return;
-			case BPMNProfilePackage.SEQUENCE_FLOW__CONDITION_EXPRESSION:
-				setConditionExpression((BPMNExpression)newValue);
-				return;
-			case BPMNProfilePackage.SEQUENCE_FLOW__SOURCE_REF:
-				setSourceRef((FlowNode)newValue);
-				return;
-			case BPMNProfilePackage.SEQUENCE_FLOW__TARGET_REF:
-				setTargetRef((FlowNode)newValue);
-				return;
+		case BPMNProfilePackage.SEQUENCE_FLOW__BASE_CONTROL_FLOW:
+			setBase_ControlFlow((ControlFlow)newValue);
+			return;
+		case BPMNProfilePackage.SEQUENCE_FLOW__IS_IMMEDIATE:
+			setIsImmediate((Boolean)newValue);
+			return;
+		case BPMNProfilePackage.SEQUENCE_FLOW__CONDITION_EXPRESSION:
+			setConditionExpression((BPMNExpression)newValue);
+			return;
+		case BPMNProfilePackage.SEQUENCE_FLOW__SOURCE_REF:
+			setSourceRef((FlowNode)newValue);
+			return;
+		case BPMNProfilePackage.SEQUENCE_FLOW__TARGET_REF:
+			setTargetRef((FlowNode)newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -398,21 +392,21 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case BPMNProfilePackage.SEQUENCE_FLOW__BASE_CONTROL_FLOW:
-				setBase_ControlFlow((ControlFlow)null);
-				return;
-			case BPMNProfilePackage.SEQUENCE_FLOW__IS_IMMEDIATE:
-				setIsImmediate(IS_IMMEDIATE_EDEFAULT);
-				return;
-			case BPMNProfilePackage.SEQUENCE_FLOW__CONDITION_EXPRESSION:
-				setConditionExpression((BPMNExpression)null);
-				return;
-			case BPMNProfilePackage.SEQUENCE_FLOW__SOURCE_REF:
-				setSourceRef((FlowNode)null);
-				return;
-			case BPMNProfilePackage.SEQUENCE_FLOW__TARGET_REF:
-				setTargetRef((FlowNode)null);
-				return;
+		case BPMNProfilePackage.SEQUENCE_FLOW__BASE_CONTROL_FLOW:
+			setBase_ControlFlow((ControlFlow)null);
+			return;
+		case BPMNProfilePackage.SEQUENCE_FLOW__IS_IMMEDIATE:
+			setIsImmediate(IS_IMMEDIATE_EDEFAULT);
+			return;
+		case BPMNProfilePackage.SEQUENCE_FLOW__CONDITION_EXPRESSION:
+			setConditionExpression((BPMNExpression)null);
+			return;
+		case BPMNProfilePackage.SEQUENCE_FLOW__SOURCE_REF:
+			setSourceRef((FlowNode)null);
+			return;
+		case BPMNProfilePackage.SEQUENCE_FLOW__TARGET_REF:
+			setTargetRef((FlowNode)null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -425,16 +419,16 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case BPMNProfilePackage.SEQUENCE_FLOW__BASE_CONTROL_FLOW:
-				return base_ControlFlow != null;
-			case BPMNProfilePackage.SEQUENCE_FLOW__IS_IMMEDIATE:
-				return isImmediate != IS_IMMEDIATE_EDEFAULT;
-			case BPMNProfilePackage.SEQUENCE_FLOW__CONDITION_EXPRESSION:
-				return conditionExpression != null;
-			case BPMNProfilePackage.SEQUENCE_FLOW__SOURCE_REF:
-				return basicGetSourceRef() != null;
-			case BPMNProfilePackage.SEQUENCE_FLOW__TARGET_REF:
-				return basicGetTargetRef() != null;
+		case BPMNProfilePackage.SEQUENCE_FLOW__BASE_CONTROL_FLOW:
+			return base_ControlFlow != null;
+		case BPMNProfilePackage.SEQUENCE_FLOW__IS_IMMEDIATE:
+			return isImmediate != IS_IMMEDIATE_EDEFAULT;
+		case BPMNProfilePackage.SEQUENCE_FLOW__CONDITION_EXPRESSION:
+			return conditionExpression != null;
+		case BPMNProfilePackage.SEQUENCE_FLOW__SOURCE_REF:
+			return basicGetSourceRef() != null;
+		case BPMNProfilePackage.SEQUENCE_FLOW__TARGET_REF:
+			return basicGetTargetRef() != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -448,12 +442,12 @@ public class SequenceFlowImpl extends FlowElementImpl implements SequenceFlow {
 	@SuppressWarnings("unchecked")
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case BPMNProfilePackage.SEQUENCE_FLOW___SEQUENCE_FLOWCONDITION_EXPRESSION__DIAGNOSTICCHAIN_MAP:
-				return SequenceFlowconditionExpression((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-			case BPMNProfilePackage.SEQUENCE_FLOW___SEQUENCE_FLOWSOURCE_REF__DIAGNOSTICCHAIN_MAP:
-				return SequenceFlowsourceRef((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
-			case BPMNProfilePackage.SEQUENCE_FLOW___SEQUENCE_FLOWTARGET_REF__DIAGNOSTICCHAIN_MAP:
-				return SequenceFlowtargetRef((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
+		case BPMNProfilePackage.SEQUENCE_FLOW___SEQUENCE_FLOWCONDITION_EXPRESSION__DIAGNOSTICCHAIN_MAP:
+			return SequenceFlowconditionExpression((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
+		case BPMNProfilePackage.SEQUENCE_FLOW___SEQUENCE_FLOWSOURCE_REF__DIAGNOSTICCHAIN_MAP:
+			return SequenceFlowsourceRef((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
+		case BPMNProfilePackage.SEQUENCE_FLOW___SEQUENCE_FLOWTARGET_REF__DIAGNOSTICCHAIN_MAP:
+			return SequenceFlowtargetRef((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
 		}
 		return super.eInvoke(operationID, arguments);
 	}
