@@ -29,9 +29,6 @@ import org.xml.sax.SAXException;
 @SuppressWarnings("nls") 
 public class BpmnElementTypesConfigurationsTest {
 
-	private static final String elementTypesConfiguration = "../org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations";
-	private static final String elementTypesCustomConfiguration = "../org.eclipse.papyrus.bpmn/model/customBpmn.elementtypesconfigurations";
-
 
 	private Document openDoc(String file) throws ParserConfigurationException, IOException, SAXException {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -43,6 +40,7 @@ public class BpmnElementTypesConfigurationsTest {
 
 	@Test
 	public void checkId() throws ParserConfigurationException, IOException, SAXException {
+		final String elementTypesConfiguration = "../org.eclipse.papyrus.bpmn/model/bpmn.elementtypesconfigurations";
 		Document doc = openDoc(elementTypesConfiguration);
 		NodeList nodeList = doc.getElementsByTagName("elementTypeConfigurations");
 
@@ -61,6 +59,7 @@ public class BpmnElementTypesConfigurationsTest {
 
 	@Test
 	public void checkCustomId() throws ParserConfigurationException, IOException, SAXException {
+		final String elementTypesCustomConfiguration = "../org.eclipse.papyrus.bpmn/model/customBpmn.elementtypesconfigurations";
 		Document doc = openDoc(elementTypesCustomConfiguration);
 		NodeList nodeList = doc.getElementsByTagName("elementTypeConfigurations");
 

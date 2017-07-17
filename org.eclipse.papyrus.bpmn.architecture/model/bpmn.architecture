@@ -2,8 +2,17 @@
 <architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmi:id="BPMN engineering" name="BPMN engineering" description="">
   <stakeholders xmi:id="org.eclipse.papyrus.bpmn.stakeholder" id="org.eclipse.papyrus.bpmn.stakeholder" name="BPMN modeler" concerns="org.eclipse.papyrus.bpmn.concern"/>
   <concerns xmi:id="org.eclipse.papyrus.bpmn.concern" id="org.eclipse.papyrus.bpmn.concern" name="Process modeling"/>
-  <contexts xsi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="org.eclipse.papyrus.bpmn.descriptionLanguage" id="org.eclipse.papyrus.bpmn.descriptionLanguage" name="BPMN" description="" icon="" extensionPrefix="" creationCommandClass="org.eclipse.papyrus.bpmn.diagram.common.commands.CreateBpmnModelCommand">
+  <contexts xsi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="org.eclipse.papyrus.bpmn.descriptionLanguage" id="org.eclipse.papyrus.bpmn.descriptionLanguage" name="BPMN" description="" icon="platform:/plugin/org.eclipse.papyrus.bpmn/icons/bpmn_64x64.png" extensionPrefix="" creationCommandClass="org.eclipse.papyrus.bpmn.diagram.common.commands.CreateBpmnModelCommand">
     <viewpoints xmi:id="org.eclipse.papyrus.bpmn.viewpoint" id="org.eclipse.papyrus.bpmn.viewpoint" name="BPMN" concerns="org.eclipse.papyrus.bpmn.concern" representationKinds="org.eclipse.papyrus.bpmn.diagram.process org.eclipse.papyrus.bpmn.diagram.collaboration"/>
+    <elementTypes href="platform:/plugin/org.eclipse.papyrus.infra.emf/model/infra-emf.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
+    <elementTypes href="platform:/plugin/org.eclipse.papyrus.infra.gmfdiag.common/model/notation.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
+    <elementTypes href="platform:/plugin/org.eclipse.papyrus.infra.gmfdiag.common/model/gmfdiag-common.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
+    <elementTypes href="platform:/plugin/org.eclipse.papyrus.infra.nattable/model/nattable-tablecontents.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
+    <elementTypes href="platform:/plugin/org.eclipse.papyrus.infra.nattable/model/nattable-tablecontext.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
+    <elementTypes href="platform:/plugin/org.eclipse.papyrus.infra.nattable.common/model/nattable-common.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
+    <elementTypes href="platform:/plugin/org.eclipse.papyrus.infra.services.controlmode/model/controlmode.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
+    <elementTypes href="platform:/plugin/org.eclipse.papyrus.infra.services.edit/model/marker.elementtypesconfigurations#_rWI4YHPzEeSnGJwaJWHCSg"/>
+    <elementTypes href="platform:/plugin/org.eclipse.papyrus.infra.types.rulebased/model/rulebased.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml-containments.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
     <elementTypes href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/StandardProfile.elementtypesconfigurations#_jfoLkGT_EeSEqNuV3JpFCA"/>
@@ -32,8 +41,7 @@
         </newModelPath>
       </owningRules>
       <childRules xmi:id="_TAb3gCXbEeeyrfXuGghKkA"/>
-      <paletteRules xmi:id="_Vm3XYGJZEeeUTrvZuD2-tQ" permit="false" element="activity.*"/>
-      <paletteRules xmi:id="_YHFRYGJZEeeUTrvZuD2-tQ" permit="false" element="bpmn.collaboration.*"/>
+      <palettes href="platform:/plugin/org.eclipse.papyrus.bpmn.diagram.process/model/process.paletteConfiguration#/"/>
     </representationKinds>
     <representationKinds xsi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="org.eclipse.papyrus.bpmn.diagram.collaboration" id="org.eclipse.papyrus.bpmn.diagram.collaboration" name="Collaboration" icon="platform:/plugin/org.eclipse.papyrus.bpmn.diagram.common/icons/Collaborationdi.png" concerns="org.eclipse.papyrus.bpmn.concern" implementationID="PapyrusUMLActivityDiagram" customStyle="" creationCommandClass="org.eclipse.papyrus.uml.diagram.activity.CreateActivityDiagramCommand">
       <modelRules xmi:id="_ehpQ4CXbEeeyrfXuGghKkA">
@@ -53,8 +61,7 @@
         </newModelPath>
       </owningRules>
       <childRules xmi:id="_0n9nwCXbEeeyrfXuGghKkA"/>
-      <paletteRules xmi:id="_1anMsCXbEeeyrfXuGghKkA" permit="false" element="activity.*"/>
-      <paletteRules xmi:id="_17yAECXbEeeyrfXuGghKkA" permit="false" element="bpmn.process.*"/>
+      <palettes href="platform:/plugin/org.eclipse.papyrus.bpmn.diagram.collaboration/model/collaboration.paletteConfiguration#/"/>
     </representationKinds>
     <metamodel href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
     <profiles href="http://www.omg.org/spec/BPMNProfile/20121112/#/"/>

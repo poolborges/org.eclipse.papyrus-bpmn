@@ -60,7 +60,7 @@ public class BPMNProcessCustomTest {
 			bpmnProcess.getFlowElements();
 		}
 		catch(UnsupportedOperationException e){
-			Assert.fail("missing custom code !");
+			Assert.fail("missing custom code for getFlowElements() !");
 		}
 	}
 	
@@ -93,7 +93,7 @@ public class BPMNProcessCustomTest {
 			bpmnProcess.getSupports();
 		}
 		catch(UnsupportedOperationException e){
-			Assert.fail("missing custom code !");
+			Assert.fail("missing custom code for basicGetSupports() !");
 		}
 	}
 
@@ -111,7 +111,7 @@ public class BPMNProcessCustomTest {
 			bpmnProcess.getLaneSets();
 		}
 		catch(UnsupportedOperationException e){
-			Assert.fail("missing custom code !");
+			Assert.fail("missing custom code for getLaneSets() !");
 		}
 	}
 	

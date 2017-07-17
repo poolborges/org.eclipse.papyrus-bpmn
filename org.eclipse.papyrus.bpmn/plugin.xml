@@ -34,20 +34,6 @@
       </profile>
    </extension>
     <extension
-          point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
-       <elementTypeSet
-             clientContextID="org.eclipse.papyrus.bpmn.descriptionLanguage"
-             path="model/bpmn.elementtypesconfigurations">
-       </elementTypeSet>
-    </extension>
-    <extension
-          point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
-       <elementTypeSet
-             clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext"
-             path="model/customBpmn.elementtypesconfigurations">
-       </elementTypeSet>
-    </extension>
-    <extension
           point="org.eclipse.papyrus.infra.properties.contexts">
        <context
              contextModel="properties/bpmn.ctx"

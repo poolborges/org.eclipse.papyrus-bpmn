@@ -36,7 +36,6 @@ public class CallActivityCustomTest {
 
 	private BPMNProcess bpmnSubProcess;
 	private CallActivity callActivity;
-	private Activity activity2;
 
 	@Before
 	public void setUp() {
@@ -54,7 +53,7 @@ public class CallActivityCustomTest {
 		activity.getOwnedNodes().add(callBehaviorAction);
 		callActivity = (CallActivity) StereotypeApplicationHelper.getInstance(null).applyStereotype(callBehaviorAction, BPMNProfilePackage.eINSTANCE.getCallActivity());
 
-		activity2 = UMLFactory.eINSTANCE.createActivity();
+		Activity activity2 = UMLFactory.eINSTANCE.createActivity();
 		model.getPackagedElements().add(activity2);
 		bpmnSubProcess = (BPMNProcess) StereotypeApplicationHelper.getInstance(null).applyStereotype(activity2, BPMNProfilePackage.eINSTANCE.getBPMNProcess());
 

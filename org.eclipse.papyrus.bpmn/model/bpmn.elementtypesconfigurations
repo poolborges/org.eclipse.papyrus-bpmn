@@ -301,7 +301,7 @@
     </matcherConfiguration>
     <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Element"/>
   </elementTypeConfigurations>
-  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bpmn.Import_UML::PackageImport" identifier="org.eclipse.papyrus.bpmn.Import_UML::PackageImport" name="Import" hint="UML::PackageImport">
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bpmn.PackageImport" identifier="org.eclipse.papyrus.bpmn.PackageImport" name="Import" hint="UML::PackageImport">
     <iconEntry xmi:id="_ulgYEwkFEeWVleXnap4Kwg" iconPath="/icons/full/obj16/PackageImport.gif" bundleId="org.eclipse.uml2.uml.edit"/>
     <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_ulgYFAkFEeWVleXnap4Kwg">
       <stereotypesQualifiedNames>BPMNProfile::Import</stereotypesQualifiedNames>
@@ -1946,7 +1946,7 @@
     </matcherConfiguration>
     <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Element"/>
   </elementTypeConfigurations>
-  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bpmn.MessageFlow_InformationFlow_UML::InformationFlow" identifier="org.eclipse.papyrus.bpmn.MessageFlow_InformationFlow_UML::InformationFlow" name="MessageFlow InformationFlow" hint="UML::InformationFlow">
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bpmn.MessageFlow_InformationFlow" identifier="org.eclipse.papyrus.bpmn.MessageFlow_InformationFlow" name="MessageFlow InformationFlow" hint="UML::InformationFlow">
     <iconEntry xmi:id="_ulhA3QkFEeWVleXnap4Kwg" iconPath="/icons/full/obj16/InformationFlow.gif" bundleId="org.eclipse.uml2.uml.edit"/>
     <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_ulhA3gkFEeWVleXnap4Kwg">
       <stereotypesQualifiedNames>BPMNProfile::MessageFlow</stereotypesQualifiedNames>
@@ -2142,7 +2142,7 @@
     </matcherConfiguration>
     <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Element"/>
   </elementTypeConfigurations>
-  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bpmn.SubConversation_InformationFlow_UML::InformationFlow" identifier="org.eclipse.papyrus.bpmn.SubConversation_InformationFlow_UML::InformationFlow" name="SubConversation InformationFlow" hint="UML::InformationFlow">
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bpmn.SubConversation_InformationFlow" identifier="org.eclipse.papyrus.bpmn.SubConversation_InformationFlow" name="SubConversation InformationFlow" hint="UML::InformationFlow">
     <iconEntry xmi:id="_ulhBMQkFEeWVleXnap4Kwg" iconPath="/icons/full/obj16/InformationFlow.gif" bundleId="org.eclipse.uml2.uml.edit"/>
     <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_ulhBMgkFEeWVleXnap4Kwg">
       <stereotypesQualifiedNames>BPMNProfile::SubConversation</stereotypesQualifiedNames>
@@ -2156,7 +2156,7 @@
     </matcherConfiguration>
     <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Element"/>
   </elementTypeConfigurations>
-  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bpmn.ConversationNode_InformationFlow_UML::InformationFlow" identifier="org.eclipse.papyrus.bpmn.ConversationNode_InformationFlow_UML::InformationFlow" name="ConversationNode InformationFlow" hint="UML::InformationFlow">
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bpmn.ConversationNode_InformationFlow" identifier="org.eclipse.papyrus.bpmn.ConversationNode_InformationFlow" name="ConversationNode InformationFlow" hint="UML::InformationFlow">
     <iconEntry xmi:id="_ulhBNwkFEeWVleXnap4Kwg" iconPath="/icons/full/obj16/InformationFlow.gif" bundleId="org.eclipse.uml2.uml.edit"/>
     <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_ulhBOAkFEeWVleXnap4Kwg">
       <stereotypesQualifiedNames>BPMNProfile::ConversationNode</stereotypesQualifiedNames>
@@ -2191,7 +2191,7 @@
     </matcherConfiguration>
     <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Element"/>
   </elementTypeConfigurations>
-  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bpmn.CallConversation_InformationFlow_UML::InformationFlow" identifier="org.eclipse.papyrus.bpmn.CallConversation_InformationFlow_UML::InformationFlow" name="CallConversation InformationFlow" hint="UML::InformationFlow">
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bpmn.CallConversation_InformationFlow" identifier="org.eclipse.papyrus.bpmn.CallConversation_InformationFlow" name="CallConversation InformationFlow" hint="UML::InformationFlow">
     <iconEntry xmi:id="_ulhBRgkFEeWVleXnap4Kwg" iconPath="/icons/full/obj16/InformationFlow.gif" bundleId="org.eclipse.uml2.uml.edit"/>
     <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_ulhBRwkFEeWVleXnap4Kwg">
       <stereotypesQualifiedNames>BPMNProfile::CallConversation</stereotypesQualifiedNames>
@@ -2205,7 +2205,7 @@
     </matcherConfiguration>
     <specializedTypes xsi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Element"/>
   </elementTypeConfigurations>
-  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bpmn.Conversation_InformationFlow_UML::InformationFlow" identifier="org.eclipse.papyrus.bpmn.Conversation_InformationFlow_UML::InformationFlow" name="Conversation InformationFlow" hint="UML::InformationFlow">
+  <elementTypeConfigurations xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.bpmn.Conversation_InformationFlow" identifier="org.eclipse.papyrus.bpmn.Conversation_InformationFlow" name="Conversation InformationFlow" hint="UML::InformationFlow">
     <iconEntry xmi:id="_ulhBTAkFEeWVleXnap4Kwg" iconPath="/icons/full/obj16/InformationFlow.gif" bundleId="org.eclipse.uml2.uml.edit"/>
     <matcherConfiguration xsi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_ulhBTQkFEeWVleXnap4Kwg">
       <stereotypesQualifiedNames>BPMNProfile::Conversation</stereotypesQualifiedNames>
@@ -2868,7 +2868,7 @@
       <requiredProfiles>BPMNProfile</requiredProfiles>
     </stereotypesToApply>
   </adviceBindingsConfigurations>
-  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_ulhCYQkFEeWVleXnap4Kwg" identifier="org.eclipse.papyrus.bpmn.import_UML::PackageImport" target="org.eclipse.papyrus.bpmn.Import_UML::PackageImport">
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_ulhCYQkFEeWVleXnap4Kwg" identifier="org.eclipse.papyrus.bpmn.import_UML::PackageImport" target="org.eclipse.papyrus.bpmn.PackageImport">
     <stereotypesToApply xmi:id="_ulhCYgkFEeWVleXnap4Kwg" stereotypeQualifiedName="BPMNProfile::Import" updateName="true">
       <requiredProfiles>BPMNProfile</requiredProfiles>
     </stereotypesToApply>
@@ -4043,7 +4043,7 @@
       <requiredProfiles>BPMNProfile</requiredProfiles>
     </stereotypesToApply>
   </adviceBindingsConfigurations>
-  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_ulhmmgkFEeWVleXnap4Kwg" identifier="org.eclipse.papyrus.bpmn.messageFlow_UML::InformationFlow" target="org.eclipse.papyrus.bpmn.MessageFlow_InformationFlow_UML::InformationFlow">
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_ulhmmgkFEeWVleXnap4Kwg" identifier="org.eclipse.papyrus.bpmn.messageFlow_UML::InformationFlow" target="org.eclipse.papyrus.bpmn.MessageFlow_InformationFlow">
     <stereotypesToApply xmi:id="_ulhmmwkFEeWVleXnap4Kwg" stereotypeQualifiedName="BPMNProfile::MessageFlow" updateName="true">
       <requiredProfiles>BPMNProfile</requiredProfiles>
     </stereotypesToApply>
@@ -4183,7 +4183,7 @@
       <requiredProfiles>BPMNProfile</requiredProfiles>
     </stereotypesToApply>
   </adviceBindingsConfigurations>
-  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_ulhm0gkFEeWVleXnap4Kwg" identifier="org.eclipse.papyrus.bpmn.subConversation_UML::InformationFlow" target="org.eclipse.papyrus.bpmn.SubConversation_InformationFlow_UML::InformationFlow">
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_ulhm0gkFEeWVleXnap4Kwg" identifier="org.eclipse.papyrus.bpmn.subConversation_UML::InformationFlow" target="org.eclipse.papyrus.bpmn.SubConversation_InformationFlow">
     <stereotypesToApply xmi:id="_ulhm0wkFEeWVleXnap4Kwg" stereotypeQualifiedName="BPMNProfile::SubConversation" updateName="true">
       <requiredProfiles>BPMNProfile</requiredProfiles>
     </stereotypesToApply>
@@ -4193,7 +4193,7 @@
       <requiredProfiles>BPMNProfile</requiredProfiles>
     </stereotypesToApply>
   </adviceBindingsConfigurations>
-  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_ulhm1gkFEeWVleXnap4Kwg" identifier="org.eclipse.papyrus.bpmn.conversationNode_UML::InformationFlow" target="org.eclipse.papyrus.bpmn.ConversationNode_InformationFlow_UML::InformationFlow">
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_ulhm1gkFEeWVleXnap4Kwg" identifier="org.eclipse.papyrus.bpmn.conversationNode_UML::InformationFlow" target="org.eclipse.papyrus.bpmn.ConversationNode_InformationFlow">
     <stereotypesToApply xmi:id="_ulhm1wkFEeWVleXnap4Kwg" stereotypeQualifiedName="BPMNProfile::ConversationNode" updateName="true">
       <requiredProfiles>BPMNProfile</requiredProfiles>
     </stereotypesToApply>
@@ -4218,7 +4218,7 @@
       <requiredProfiles>BPMNProfile</requiredProfiles>
     </stereotypesToApply>
   </adviceBindingsConfigurations>
-  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_ulhm4AkFEeWVleXnap4Kwg" identifier="org.eclipse.papyrus.bpmn.callConversation_UML::InformationFlow" target="org.eclipse.papyrus.bpmn.CallConversation_InformationFlow_UML::InformationFlow">
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_ulhm4AkFEeWVleXnap4Kwg" identifier="org.eclipse.papyrus.bpmn.callConversation_UML::InformationFlow" target="org.eclipse.papyrus.bpmn.CallConversation_InformationFlow">
     <stereotypesToApply xmi:id="_ulhm4QkFEeWVleXnap4Kwg" stereotypeQualifiedName="BPMNProfile::CallConversation" updateName="true">
       <requiredProfiles>BPMNProfile</requiredProfiles>
     </stereotypesToApply>
@@ -4228,7 +4228,7 @@
       <requiredProfiles>BPMNProfile</requiredProfiles>
     </stereotypesToApply>
   </adviceBindingsConfigurations>
-  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_ulhm5AkFEeWVleXnap4Kwg" identifier="org.eclipse.papyrus.bpmn.conversation_UML::InformationFlow" target="org.eclipse.papyrus.bpmn.Conversation_InformationFlow_UML::InformationFlow">
+  <adviceBindingsConfigurations xsi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_ulhm5AkFEeWVleXnap4Kwg" identifier="org.eclipse.papyrus.bpmn.conversation_UML::InformationFlow" target="org.eclipse.papyrus.bpmn.Conversation_InformationFlow">
     <stereotypesToApply xmi:id="_ulhm5QkFEeWVleXnap4Kwg" stereotypeQualifiedName="BPMNProfile::Conversation" updateName="true">
       <requiredProfiles>BPMNProfile</requiredProfiles>
     </stereotypesToApply>

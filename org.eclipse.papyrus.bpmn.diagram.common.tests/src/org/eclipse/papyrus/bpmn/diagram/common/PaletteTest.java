@@ -23,6 +23,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
+import org.apache.log4j.Logger;
 import org.eclipse.core.runtime.FileLocator;
 import org.junit.Before;
 import org.junit.Test;
@@ -34,8 +35,9 @@ import org.xml.sax.SAXException;
 
 public class PaletteTest {
 
-	Set<String> elementtypesSet;
-	
+	private static final Logger log = Logger.getLogger(PaletteTest.class);
+	private Set<String> elementtypesSet;
+
 	@Before
 	public void loadElementtypes() throws ParserConfigurationException, IOException, SAXException{
 		elementtypesSet = getGraphicalElementtypesSet("platform:/plugin/org.eclipse.papyrus.bpmn.diagram.common/model/bpmndi.elementtypesconfigurations");
@@ -57,9 +59,10 @@ public class PaletteTest {
 			Node node = nodeList.item(i);
 			if(node.getNodeType() == Node.ELEMENT_NODE){
 				Element element = (Element)node;
-				if(set.add(element.getAttribute("identifier")) == false){
-					System.err.println("duplicate "+ element.getAttribute("identifier"));
-					throw new UnsupportedOperationException("duplicate "+ element.getAttribute("identifier"));
+				String identifier = element.getAttribute("identifier");
+				if(!set.add(identifier)){
+					log.error("duplicate "+ identifier);
+					throw new UnsupportedOperationException("duplicate "+ identifier);
 				}
 			}
 		}
@@ -82,7 +85,7 @@ public class PaletteTest {
 			if(node.getNodeType() == Node.ELEMENT_NODE){
 				Element element = (Element)node;
 				String href = element.getAttribute("href");
-				String id = href.substring(href.indexOf("#") + 1);
+				String id = href.substring(href.indexOf('#') + 1);
 				set.add(id);
 			}
 		}
@@ -96,8 +99,8 @@ public class PaletteTest {
 		Set<String> paletteSet = getPaletteElementtypes("platform:/plugin/org.eclipse.papyrus.bpmn.diagram.collaboration/model/collaboration.paletteConfiguration");
 		
 		for(String id : paletteSet) {
-			if(elementtypesSet.contains(id) == false){
-				System.err.println("collaboration " + id + " is not graphical elementtype");
+			if(!elementtypesSet.contains(id)){
+				log.error("collaboration " + id + " is not graphical elementtype");
 				fail(id);
 			}
 		}
@@ -109,8 +112,8 @@ public class PaletteTest {
 		Set<String> paletteSet = getPaletteElementtypes("platform:/plugin/org.eclipse.papyrus.bpmn.diagram.process/model/process.paletteConfiguration");
 		
 		for(String id : paletteSet) {
-			if(elementtypesSet.contains(id) == false){
-				System.err.println("process " + id + " is not graphical elementtype");
+			if(!elementtypesSet.contains(id)){
+				log.error("process " + id + " is not graphical elementtype");
 				fail(id);
 			}
 		}
