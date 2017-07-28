@@ -44,11 +44,13 @@
   <eClassifiers xsi:type="ecore:EClass" name="FlowNode" abstract="true" eSuperTypes="#//FlowElement">
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EReference" name="incoming" ordered="false" upperBound="-1"
-          eType="#//SequenceFlow" eOpposite="#//SequenceFlow/targetRef">
+          eType="#//SequenceFlow" changeable="false" volatile="true" transient="true"
+          derived="true" eOpposite="#//SequenceFlow/targetRef">
         <eAnnotations source="redefines" references="#//BaseElement/incoming"/>
       </contents>
       <contents xsi:type="ecore:EReference" name="outgoing" ordered="false" upperBound="-1"
-          eType="#//SequenceFlow" eOpposite="#//SequenceFlow/sourceRef">
+          eType="#//SequenceFlow" changeable="false" volatile="true" transient="true"
+          derived="true" eOpposite="#//SequenceFlow/sourceRef">
         <eAnnotations source="redefines" references="#//BaseElement/outgoing"/>
       </contents>
     </eAnnotations>
@@ -456,9 +458,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="conditionExpression" ordered="false"
         eType="#//BPMNExpression"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceRef" ordered="false"
-        lowerBound="1" eType="#//FlowNode" volatile="true"/>
+        lowerBound="1" eType="#//FlowNode" changeable="false" volatile="true" transient="true"
+        derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetRef" ordered="false"
-        lowerBound="1" eType="#//FlowNode" volatile="true"/>
+        lowerBound="1" eType="#//FlowNode" changeable="false" volatile="true" transient="true"
+        derived="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BPMNExpression" eSuperTypes="#//BaseElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="base_OpaqueExpression"

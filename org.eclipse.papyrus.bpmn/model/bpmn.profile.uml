@@ -12735,11 +12735,11 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J9hK4NywEeaKmtNtvNnrBw"/>
         <upperValue xmi:type="uml:LiteralInteger" xmi:id="_K0vGwNywEeaKmtNtvNnrBw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="BPMNProfile-CoreStructure-Common-FlowNode-incoming" name="incoming" visibility="public" type="BPMNProfile-CoreStructure-Common-SequenceFlow" association="BPMNProfile-CoreStructure-Common-packagedElement-44" isderived="false">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="BPMNProfile-CoreStructure-Common-FlowNode-incoming" name="incoming" visibility="public" type="BPMNProfile-CoreStructure-Common-SequenceFlow" isReadOnly="true" isDerived="true" association="BPMNProfile-CoreStructure-Common-packagedElement-44" isderived="false">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="BPMNProfile-CoreStructure-Common-FlowNode-incoming-lowerValue"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="BPMNProfile-CoreStructure-Common-FlowNode-incoming-upperValue" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="BPMNProfile-CoreStructure-Common-FlowNode-outgoing" name="outgoing" visibility="public" type="BPMNProfile-CoreStructure-Common-SequenceFlow" association="BPMNProfile-CoreStructure-Common-packagedElement-45" isderived="false">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="BPMNProfile-CoreStructure-Common-FlowNode-outgoing" name="outgoing" visibility="public" type="BPMNProfile-CoreStructure-Common-SequenceFlow" isReadOnly="true" isDerived="true" association="BPMNProfile-CoreStructure-Common-packagedElement-45" isderived="false">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="BPMNProfile-CoreStructure-Common-FlowNode-outgoing-lowerValue"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="BPMNProfile-CoreStructure-Common-FlowNode-outgoing-upperValue" value="*"/>
       </ownedAttribute>
@@ -12924,8 +12924,8 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="BPMNProfile-CoreStructure-Common-SequenceFlow-conditionExpression" name="conditionExpression" visibility="public" type="BPMNProfile-CoreStructure-Common-BPMNExpression" association="BPMNProfile-CoreStructure-Common-packagedElement-39" isderived="false">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="BPMNProfile-CoreStructure-Common-SequenceFlow-conditionExpression-lowerValue"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="BPMNProfile-CoreStructure-Common-SequenceFlow-sourceRef" name="sourceRef" visibility="public" type="BPMNProfile-CoreStructure-Common-FlowNode" association="BPMNProfile-CoreStructure-Common-packagedElement-45" isderived="false"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="BPMNProfile-CoreStructure-Common-SequenceFlow-targetRef" name="targetRef" visibility="public" type="BPMNProfile-CoreStructure-Common-FlowNode" association="BPMNProfile-CoreStructure-Common-packagedElement-44" isderived="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="BPMNProfile-CoreStructure-Common-SequenceFlow-sourceRef" name="sourceRef" visibility="public" type="BPMNProfile-CoreStructure-Common-FlowNode" isReadOnly="true" isDerived="true" association="BPMNProfile-CoreStructure-Common-packagedElement-45" isderived="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="BPMNProfile-CoreStructure-Common-SequenceFlow-targetRef" name="targetRef" visibility="public" type="BPMNProfile-CoreStructure-Common-FlowNode" isReadOnly="true" isDerived="true" association="BPMNProfile-CoreStructure-Common-packagedElement-44" isderived="false"/>
       <icon xmi:type="uml:Image" xmi:id="_8EYzYOmcEeSE8qC-7-3YgA" format="Papyrus" location="platform:/plugin/org.eclipse.papyrus.bpmn/icons/SequenceFlow.png">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mSNYsLJLEeW3evHeiuWSvw" source="image_papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mSP08LJLEeW3evHeiuWSvw" key="image_kind_key" value="icon"/>

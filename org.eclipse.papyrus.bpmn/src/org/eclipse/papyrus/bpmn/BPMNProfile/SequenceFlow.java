@@ -115,22 +115,11 @@ public interface SequenceFlow extends FlowElement {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source Ref</em>' reference.
-	 * @see #setSourceRef(FlowNode)
 	 * @see org.eclipse.papyrus.bpmn.BPMNProfile.BPMNProfilePackage#getSequenceFlow_SourceRef()
-	 * @model required="true" volatile="true" ordered="false"
+	 * @model required="true" transient="true" changeable="false" volatile="true" derived="true" ordered="false"
 	 * @generated
 	 */
 	FlowNode getSourceRef();
-
-	/**
-	 * Sets the value of the '{@link org.eclipse.papyrus.bpmn.BPMNProfile.SequenceFlow#getSourceRef <em>Source Ref</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source Ref</em>' reference.
-	 * @see #getSourceRef()
-	 * @generated
-	 */
-	void setSourceRef(FlowNode value);
 
 	/**
 	 * Returns the value of the '<em><b>Target Ref</b></em>' reference.
@@ -141,22 +130,11 @@ public interface SequenceFlow extends FlowElement {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Ref</em>' reference.
-	 * @see #setTargetRef(FlowNode)
 	 * @see org.eclipse.papyrus.bpmn.BPMNProfile.BPMNProfilePackage#getSequenceFlow_TargetRef()
-	 * @model required="true" volatile="true" ordered="false"
+	 * @model required="true" transient="true" changeable="false" volatile="true" derived="true" ordered="false"
 	 * @generated
 	 */
 	FlowNode getTargetRef();
-
-	/**
-	 * Sets the value of the '{@link org.eclipse.papyrus.bpmn.BPMNProfile.SequenceFlow#getTargetRef <em>Target Ref</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Ref</em>' reference.
-	 * @see #getTargetRef()
-	 * @generated
-	 */
-	void setTargetRef(FlowNode value);
 
 	/**
 	 * <!-- begin-user-doc -->
