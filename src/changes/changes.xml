@@ -1,0 +1,11 @@
+<document>
+  <properties>
+    <title/>
+    <author email="francois.le-fevre@cea.fr" />
+  </properties>
+  <body>
+    <release version="0.9.0" date="2017-10-17" description="cat version" >
+      <action dev="flefevre" issue="526140" type="add" >Migration on Papyrus Oxygen</action>
+    </release>
+  </body>
+</document>

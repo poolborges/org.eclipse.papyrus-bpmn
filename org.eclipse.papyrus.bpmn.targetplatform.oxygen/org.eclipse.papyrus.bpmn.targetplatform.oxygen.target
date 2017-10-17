@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 
-<target name="Papyrus Oxygen" sequenceNumber="1487075885">
+<target name="Papyrus Oxygen 3.2 I2" sequenceNumber="1487075885">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.platform.feature.group" version="0.0.0"/>
@@ -15,7 +15,7 @@
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.papyrus.sdk.feature.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.papyrus.views.properties.model.xwt" version="0.0.0"/>
-      <repository id="eclipse-papyrus-oxygen-nightly" location="http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/oxygen/"/>
+      <repository id="eclipse-papyrus-oxygen-3.2i2" location="http://download.eclipse.org/modeling/mdt/papyrus/updates/milestones/3.2/I2/"/>
     </location>
   </locations>
 </target>

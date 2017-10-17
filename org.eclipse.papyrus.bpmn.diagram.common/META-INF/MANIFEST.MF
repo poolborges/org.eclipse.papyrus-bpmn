@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Vendor: %Bundle-Vendor
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: org.eclipse.papyrus.bpmn.diagram.common;singleton:=true
-Bundle-Version: 0.9.0.qualifier
+Bundle-Version: 0.9.0
 Bundle-Activator: org.eclipse.papyrus.bpmn.diagram.common.Activator
 Require-Bundle: org.eclipse.papyrus.uml.tools.utils;bundle-version="[3.0.0,4.0.0)",
  org.eclipse.papyrus.bpmn;bundle-version="0.7.0",

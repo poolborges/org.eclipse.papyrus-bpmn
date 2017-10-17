@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-Vendor: %Bundle-Vendor
 Bundle-SymbolicName: org.eclipse.papyrus.bpmn;singleton:=true
-Bundle-Version: 0.9.0.qualifier
+Bundle-Version: 0.9.0
 Bundle-Activator: org.eclipse.papyrus.bpmn.Activator
 Export-Package: org.eclipse.papyrus.bpmn,
  org.eclipse.papyrus.bpmn.BPMNProfile,
