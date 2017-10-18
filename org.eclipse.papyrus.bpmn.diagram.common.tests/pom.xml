@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.eclipse.papyrus.bpmn</groupId>
 		<artifactId>org.eclipse.papyrus.bpmn.parent</artifactId>
-		<version>0.9.0</version>
+		<version>0.9.1</version>
 	</parent>
 	<artifactId>org.eclipse.papyrus.bpmn.diagram.common.tests</artifactId>
 	<packaging>eclipse-test-plugin</packaging>

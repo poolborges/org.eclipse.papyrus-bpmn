@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-Vendor: %Bundle-Vendor
 Bundle-SymbolicName: org.eclipse.papyrus.bpmn.architecture;singleton:=true
-Bundle-Version: 0.9.0
+Bundle-Version: 0.9.1
 Bundle-Activator: org.eclipse.papyrus.bpmn.architecture.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
