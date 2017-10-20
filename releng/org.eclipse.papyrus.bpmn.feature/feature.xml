@@ -21,6 +21,10 @@ http://www.eclipse.org/legal/epl-v10.html
    <license url="%licenseURL">
       %license
    </license>
+   
+   <requires>
+      <import feature="org.eclipse.papyrus.sdk.feature" version="3.0.0" match="compatible"/>
+   </requires>
 
    <plugin
          id="org.eclipse.papyrus.bpmn"
