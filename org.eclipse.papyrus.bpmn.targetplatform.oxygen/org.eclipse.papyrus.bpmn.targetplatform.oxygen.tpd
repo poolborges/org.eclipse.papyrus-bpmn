@@ -1,4 +1,4 @@
-target "Papyrus Oxygen 3.2 I2" with source requirements
+target "Papyrus Oxygen 3.2" with source requirements
 
 location "http://download.eclipse.org/releases/oxygen/" eclipse-oxygen {
  org.eclipse.platform.feature.group lazy
@@ -7,9 +7,6 @@ location "http://download.eclipse.org/releases/oxygen/" eclipse-oxygen {
  org.eclipse.equinox.p2.discovery.feature.feature.group lazy
  org.eclipse.equinox.executable.feature.group lazy
  org.eclipse.ocl.uml.feature.group lazy
-}
-
-location "http://download.eclipse.org/modeling/mdt/papyrus/updates/milestones/3.2/I2/" eclipse-papyrus-oxygen-3.2i2 {
  org.eclipse.papyrus.sdk.feature.feature.group lazy
  org.eclipse.papyrus.views.properties.model.xwt lazy
- }
+}
