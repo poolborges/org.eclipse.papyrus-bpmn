@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -29,7 +30,7 @@
 		<component.rcp.name>org.eclipse.papyrus.bpmn.rcp</component.rcp.name>
 		<component.apibaseline.url>http://download.eclipse.org/modeling/mdt/papyrus/components/bpmn/0.8.0_papyrus-bpmn-mars_190/</component.apibaseline.url>
 		<component.servicetype>org.eclipse.papyrus.bpmn.service.types</component.servicetype>
-		<eclipse.targetrelease>oxygen</eclipse.targetrelease>
+		<eclipse.targetrelease>photon</eclipse.targetrelease>
 		<target.version>${project.version}</target.version>
 		<sonar.exclusions>**/src-gen/**</sonar.exclusions>
 	</properties>
@@ -44,7 +45,7 @@
 		<module>org.eclipse.papyrus.bpmn.tests</module>
 		<module>org.eclipse.papyrus.bpmn.diagram.common.tests</module>
 
-		<module>org.eclipse.papyrus.bpmn.targetplatform.oxygen</module>
+		<module>org.eclipse.papyrus.bpmn.targetplatform.photon</module>
 		<module>releng</module>
 	</modules>
 
@@ -103,8 +104,8 @@
 			</snapshots>
 		</repository>
 		<repository>
-			<id>eclipse-oxygen</id>
-			<url>http://download.eclipse.org/releases/oxygen</url>
+			<id>eclipse-photon</id>
+			<url>http://download.eclipse.org/releases/photon</url>
 			<layout>p2</layout>
 		</repository>
 	</repositories>

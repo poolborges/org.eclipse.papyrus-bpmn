@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde?><!-- generated with https://github.com/mbarbero/fr.obeo.releng.targetplatform --><target name="Papyrus Photon 4.0" sequenceNumber="1515589588">
+  <locations>
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.platform.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.rcp.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.jdt.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.equinox.executable.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.ocl.uml.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.papyrus.sdk.feature.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.papyrus.views.properties.model.xwt" version="0.0.0"/>
+      <repository id="eclipse-photon" location="http://download.eclipse.org/releases/photon/"/>
+    </location>
+  </locations>
+</target>

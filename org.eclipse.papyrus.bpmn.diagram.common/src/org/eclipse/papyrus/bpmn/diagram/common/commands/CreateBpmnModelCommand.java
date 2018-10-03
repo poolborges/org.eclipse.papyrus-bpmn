@@ -13,12 +13,16 @@ package org.eclipse.papyrus.bpmn.diagram.common.commands;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.papyrus.infra.architecture.commands.IModelCreationCommand;
 import org.eclipse.papyrus.uml.diagram.common.commands.ModelCreationCommandBase;
 import org.eclipse.papyrus.uml.tools.utils.PackageUtil;
 import org.eclipse.uml2.uml.Profile;
 import org.eclipse.uml2.uml.UMLFactory;
 
-public class CreateBpmnModelCommand extends ModelCreationCommandBase {
+/**
+ * The Class CreateBpmnModelCommand.
+ */
+public class CreateBpmnModelCommand extends ModelCreationCommandBase implements IModelCreationCommand{
 
 	public static final String COMMAND_ID = "BPMN";
 

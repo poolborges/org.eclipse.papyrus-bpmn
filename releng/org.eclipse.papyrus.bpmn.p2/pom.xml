@@ -31,10 +31,10 @@
 								<project.website>https://www.eclipse.org/papyrus/components/bpmn</project.website>
 								<project.issues>${project.issueManagement.url}</project.issues>
 								<eclipse.target>${eclipse.targetrelease}</eclipse.target>
-								<update.site.nightly>https://hudson.eclipse.org/papyrus/view/BPMN/job/papyrus-bpmn-oxygen/ws/releng/org.eclipse.papyrus.bpmn.p2/target/repository/</update.site.nightly>
+								<update.site.nightly>https://hudson.eclipse.org/papyrus/view/BPMN/job/papyrus-bpmn-photon/ws/releng/org.eclipse.papyrus.bpmn.p2/target/repository/</update.site.nightly>
 							</symbols>
 							<associateSites>
-								<site>http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/oxygen</site>
+								<site>http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/photon</site>
 							</associateSites>
 							<siteTemplateFolder>siteTemplate</siteTemplateFolder>
 							<p2StatsUrl>http://download.eclipse.org/stats</p2StatsUrl>
