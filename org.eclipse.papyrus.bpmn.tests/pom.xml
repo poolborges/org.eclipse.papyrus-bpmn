@@ -10,7 +10,54 @@
 	</parent>
 	<artifactId>org.eclipse.papyrus.bpmn.tests</artifactId>
 	<packaging>eclipse-test-plugin</packaging>
+        
+        <properties>
+                <ui.test.vmargs.all>-Xmx2048m -XX:MaxPermSize=256m</ui.test.vmargs.all>
+                <ui.test.vmargs.mac>-XstartOnFirstThread</ui.test.vmargs.mac>
+                <ui.test.vmargs>${ui.test.vmargs.all}</ui.test.vmargs>
+        </properties>
+
+        <profiles>
+            <profile>
+                    <id>mac-customization</id>
+                    <activation>
+                            <os>
+                                    <family>mac</family>
+                            </os>
+                    </activation>
+                    <properties>
+                            <ui.test.vmargs>${ui.test.vmargs.all} ${ui.test.vmargs.mac}</ui.test.vmargs>
+                    </properties>
+            </profile>
+          </profiles>
+  
 	<build>
 		<testSourceDirectory>src</testSourceDirectory>
+                
+                <plugins>
+                        <plugin>
+                                <groupId>org.eclipse.tycho</groupId>
+                                <artifactId>tycho-source-plugin</artifactId>
+                        </plugin>
+                        <plugin>
+                                <groupId>org.eclipse.tycho</groupId>
+                                <artifactId>tycho-surefire-plugin</artifactId>
+                                <configuration>
+                                        <includes>
+                                                <!--<include>org/eclipse/papyrus/bpmn/tests/unit/AllUnitTests.class</include -->
+                                                <!--<include>org/eclipse/papyrus/bpmn/tests/plugin/AllPluginTests.class</include>-->
+                                                <!--<include>org/eclipse/papyrus/bpmn/tests/ui/AllUiTests.class</include -->
+                                        </includes>
+                                        <useUIHarness>false</useUIHarness>
+                                        <useUIThread>false</useUIThread>
+                                        <argLine>${ui.test.vmargs}</argLine>
+                                        <!-- 
+                                        <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine> 
+                                        <argLine append="true">${tycho.testArgLine}</argLine>
+                                        -->
+                                        <testFailureIgnore>true</testFailureIgnore>
+                                </configuration>
+                        </plugin>
+                </plugins>
 	</build>
 </project>
